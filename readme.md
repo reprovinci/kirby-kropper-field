@@ -7,6 +7,10 @@ Click it and a cropper tool will be loaded
 
 ![Preview](https://github.com/reprovinci/kirby-kropper-field/blob/master/preview.png?raw=true)
 
+## Installation
+
+Copy the folder kropper into the fields folder of your kirby installation.
+
 ## Usage
 
 ```yaml

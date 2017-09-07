@@ -1,10 +1,8 @@
-
 <?php
 if(!empty($_POST['root']) && !empty($_FILES['croppedImage'])) {
   file_put_contents($_POST['root'], file_get_contents($_FILES['croppedImage']['tmp_name']));
 }
 ?>
-
 <script>
   (function() {
     $(window).load(function(){

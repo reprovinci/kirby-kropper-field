@@ -9,8 +9,8 @@ use Kirby\Panel\Models\File;
  * Kropper Field for Kirby 2
  *
  * @version   0.0.1
- * @author    Reprovinci / Pascal Küsgen <kuesgen@blanko.de>
- * @link      https://github.com/reprovinci/kirby-kropper
+ * @author    Reprovinci <willem@reprovinci.nl >/ Pascal Küsgen <kuesgen@blanko.de>
+ * @link      https://github.com/reprovinci/kirby-kropper-field
  */
 class KropperField extends BaseField
 {
