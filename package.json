@@ -1,0 +1,12 @@
+{
+   "name": "kirby-kropper-field",
+   "description": "Kirby field for cropping images",
+   "author": "Willem Turkstra (willem@reprovinci.nl)",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/reprovinci/kirby-kropper-field"
+   },
+   "version": "0.1.0",
+   "type": "kirby-plugin",
+   "license": "MIT"
+}

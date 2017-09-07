@@ -1,0 +1,57 @@
+.croppingarea {
+    background: #fff;
+    border: 2px solid #ddd;
+    border-top: none;
+}
+
+.croppingarea .btn {
+    color: #777;
+    padding: .75em 1.5em;
+    border-right: 1px solid #efefef;
+}
+
+.croppingarea .btn:focus,
+.croppingarea .btn:hover {
+    color: #000;
+}
+
+.croppingarea .btn-positive {
+    color: #8dae28;
+}
+
+.croppingarea .btn-positive:focus,
+.croppingarea .btn-positive:hover {
+    color: #000;
+}
+
+.croppingarea .croppingarea--imagewrapper {
+    padding: 8px;
+}
+
+
+.fileview-cropper {
+    background: url(dat:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFW…JJREFUeNpiYGRkYgQBBhgYIAGEBCO6SpIFmKCADDMAAgwATVgAkU8MrdIAAAAASUVORK5CYII=);
+    position: absolute;
+    left: 0;
+    right: 33.333%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cropper-button-container {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+
+}
+
+.cropper-button-container button {
+    background: #eee;
+}
+
+.cropper-button-container button + button {
+    margin-left: 1em;
+
+}
