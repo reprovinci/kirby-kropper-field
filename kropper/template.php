@@ -3,16 +3,14 @@ if(!empty($_POST['root']) && !empty($_FILES['croppedImage'])) {
   file_put_contents($_POST['root'], file_get_contents($_FILES['croppedImage']['tmp_name']));
 }
 ?>
+
 <script>
   (function() {
-    $(window).load(function(){
-      setTimeout(function () {
-        $('.field-name-cropper').remove();
-        if($('.field-name-_info input').val().startsWith("image")) {
-          $('.fileview-options ul').append('<li><button  class="btn btn-with-icon cropper-init"><i class="icon icon-left fa fa-crop"></i>Crop</button></li>');
-          $('.fileview-options ul li').css({'width': '25%'});
-        }
-      }, 750);
+    $(document).ready(function(){
+      if($('.field-name-_info input').val().startsWith("image")) {
+        $('.fileview-options ul').append('<li><button  class="btn btn-with-icon cropper-init"><i class="icon icon-left fa fa-crop"></i>Crop</button></li>');
+        $('.fileview-options ul li').css({'width': '25%'});
+      }
     });
 
     var cropper = null;
@@ -45,11 +43,13 @@ if(!empty($_POST['root']) && !empty($_FILES['croppedImage'])) {
 
         formData.append('croppedImage', blob);
         formData.append('root', '<?= str_replace('\\', '\\\\', $file->root()); ?>');
+        formData.append('csrf', '<?= panel()->csrf(); ?>');
 
         $.ajax({
           url: '',
           method: 'POST',
           data: formData,
+          dataType: 'json',
           processData: false,
           contentType: false,
           success: function (data, status) {
